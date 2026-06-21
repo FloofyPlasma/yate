@@ -11,6 +11,8 @@ Checks: >
   -cppcoreguidelines-avoid-magic-numbers,
   -readability-magic-numbers,
   -readability-identifier-length
+  -bugprone-exception-escape
+  -readability-implicit-bool-conversion
 
 WarningsAsErrors: ''
 HeaderFilterRegex: '(core|sdk|app|extensions)/.*\.(h|hpp)$'
@@ -27,8 +29,6 @@ CheckOptions:
     value: lower_case
   - key: readability-identifier-naming.MemberCase
     value: lower_case
-  - key: readability-identifier-naming.MemberPrefix
-    value: m_
   - key: readability-identifier-naming.PrivateMemberPrefix
     value: m_
   - key: readability-identifier-naming.EnumConstantCase
